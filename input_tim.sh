@@ -6,12 +6,12 @@
 #    By: ldevelle <ldevelle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/01/18 04:56:49 by ldevelle          #+#    #+#              #
-#    Updated: 2019/01/18 04:57:12 by ldevelle         ###   ########.fr        #
+#    Updated: 2019/02/06 14:38:02 by ldevelle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
 
-find fill_it_files/*.c >> list_files.txt
+find $1/*.c >> list_files.txt
 
 declare -i i=0
 while IFS=: read -r line
